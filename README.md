@@ -2,9 +2,9 @@
 
 ![Port Forward Opener](./forward_opener.png)
 
-This setup allow external users to connect to internal servers through port forwarding.
+This setup allows external users to connect through port forwarding to internal servers.
 
-Usefull for small offices when:
+Useful for small offices when:
 
 - You cannot use vpn
 - You don't like port knocking
@@ -16,7 +16,7 @@ Let's say a user wants to connect to the server with RDP
 3. The **User** makes a RDP connection to the internal server
 3. The Firewall closes SSH connection automatically.
 
-**It's not ready for production, don't use it if you don't know exactly what you are doing**
+**This setup it's not ready for production. The way it uses the OpenBSD is by far a non typical way, and you must not use it if you don't know exactly what you are doing**
 
 ## Addressing Scheme Example
 
@@ -217,5 +217,6 @@ The `$wan` changes according to the address of the SSH connection that the user 
 
 ## Todo
 
-- chroot shell
-- email activity
+- chroot firewall users shell
+- email any activity
+- convert `fw.sh` shell script to binary
