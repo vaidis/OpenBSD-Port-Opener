@@ -11,7 +11,7 @@ Useful for:
 - Don't like port knocking
 - Accept connections to services with port fordward
 
-Let's say aν external user wants to connect to his internal desktop with RDP
+Let's say an external user wants to connect to his internal desktop with RDP
 
 1. The **User** makes a SSH connection to firewall.
 2. The Firewall allows for a few seconds the IP of the user to connect to his internal desktop
