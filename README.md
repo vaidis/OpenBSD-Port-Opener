@@ -16,7 +16,7 @@ Let's say a user wants to connect to the server with RDP
 3. The **User** makes a RDP connection to the internal server
 3. The Firewall closes SSH connection automatically.
 
-**This setup it's not ready for production. The way it uses the OpenBSD is by far a non typical way, and you must not use it if you don't know exactly what you are doing**
+**It's not ready for production. It's by far a non typical setup, and you must not use it if you don't know exactly what you are doing**
 
 ## Addressing Scheme Example
 
