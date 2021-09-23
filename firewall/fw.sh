@@ -1,7 +1,7 @@
 #!/usr/bin/env ksh
 
 #
-# Let-Me-In (client)
+# Port Opener (client)
 #
 # for OpenBSD
 # by ste.vaidis@gmail.com

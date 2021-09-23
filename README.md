@@ -207,7 +207,7 @@ passwd jack
 Add one or more pf rules to user file.
 
 ```bash
-vi firewall/user/jack
+vi /firewall/user/jack
 ```
 An example to allow user jack to make RDP connections to host 192.168.2.12:
 
@@ -218,5 +218,6 @@ The `$wan` changes according to the address of the SSH connection that the user 
 ## Todo
 
 - chroot firewall users shell
+- copy files in a more secure place
 - email any activity
 - convert `fw.sh` shell script to binary

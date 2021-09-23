@@ -1,7 +1,7 @@
 #!/usr/bin/env ksh
 
 #
-# Forward Opener (server helper)
+# Port Opener (server helper)
 #
 # for OpenBSD
 # by ste.vaidis@gmail.com
