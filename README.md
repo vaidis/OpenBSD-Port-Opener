@@ -2,14 +2,14 @@
 
 ![Port Forward Opener](./forward_opener.png)
 
-This setup allows external users to connect through port forwarding to internal servers.
+> This setup allows external users to connect to internal servers through port forwarding.
 
 Useful for small offices when:
 
 - You cannot use vpn
 - You don't like port knocking
 
-Let's say a user wants to connect to the server with RDP
+Let's say a external user wants to connect to an internal server with RDP
 
 1. The **User** makes a SSH connection to firewall.
 2. The Firewall allows for a few seconds the IP of the user to connect to the internal server.
