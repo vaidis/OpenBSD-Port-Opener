@@ -20,9 +20,10 @@ Let's say a external user wants to connect to his internal desktop with RDP
 
 How it works
 
-1. `fd.sh` Executed on SSH connection and sends `{"jack", "10.20.30.40"}` to port 3000
-2. `fw-server.sh` Listens the port 3000 for objects like `{"jack", "10.20.30.40"}`
-3. `fw-allow.sh` Allow for a few seconds the `10.20.30.40` to connect further according to the rules in the `/user/jack` file
+1. `fd.sh` Executed on SSH connection and sends objects like `{"jack", "10.20.30.40"}` to port 3000
+2. `fw-server.sh` Listens to port 300 for objects and execute the `fw-allow.sh jack 10.20.30.40`
+3. `fw-allow.sh` Add (for a few seconds only) the firewall rules to allow `10.20.30.40` further connections based on `/user/jack` file
+
 
 **It's not ready for production. It's by far a non typical setup, and you must not use it if you don't know exactly what you are doing.**
 ## Addressing Scheme Example
