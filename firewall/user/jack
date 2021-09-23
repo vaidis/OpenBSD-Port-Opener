@@ -1,0 +1,2 @@
+pass in proto tcp from IP to $wan port 63389 rdr-to 192.168.2.222 port 3388
+pass in proto tcp from IP to $wan port 60322 rdr-to 192.168.2.222 port 22

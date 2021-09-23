@@ -1,0 +1,1 @@
+pass in log proto tcp to $wan port 60122 rdr-to 192.168.2.11 port 22
