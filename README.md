@@ -4,20 +4,27 @@
 
 > This setup allows external users to connect to internal servers through port forwarding.
 
-Useful for small offices when:
+Useful for:
 
-- You cannot use vpn
-- You don't like port knocking
+- Small offices
+- Cannot use VPN
+- Don't like port knocking
+- Accept connections to services with port fordward
 
-Let's say a external user wants to connect to an internal server with RDP
+Let's say a external user wants to connect to his internal desktop with RDP
 
 1. The **User** makes a SSH connection to firewall.
-2. The Firewall allows for a few seconds the IP of the user to connect to the internal server.
-3. The **User** makes a RDP connection to the internal server
+2. The Firewall allows for a few seconds the IP of the user to connect to his internal desktop
+3. The **User** makes a RDP connection to his internal desktop
 3. The Firewall closes SSH connection automatically.
 
-**It's not ready for production. It's by far a non typical setup, and you must not use it if you don't know exactly what you are doing**
+How it works
 
+1. `fd.sh` Executed on SSH connection and sends `{"jack", "10.20.30.40"}` to port 3000
+2. `fw-server.sh` Listens the port 3000 for objects like `{"jack", "10.20.30.40"}`
+3. `fw-allow.sh` Allow for a few seconds the `10.20.30.40` to connect further according to the rules in the `/user/jack` file
+
+**It's not ready for production. It's by far a non typical setup, and you must not use it if you don't know exactly what you are doing.**
 ## Addressing Scheme Example
 
 ```
