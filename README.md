@@ -20,8 +20,8 @@ Let's say an external user wants to connect to his internal desktop with RDP
 
 How it works
 
-1. `fd.sh` Executed on SSH connection and sends objects like `{"jack", "10.20.30.40"}` to port 3000
-2. `fw-server.sh` Listens to port 300 for objects and execute the `fw-allow.sh jack 10.20.30.40`
+1. `fd.sh` Executed on SSH connection and sends objects like `{"jack", "10.20.30.40"}` to localhost:3000
+2. `fw-server.sh` Listens to localhost:3000 for these objects and execute the `fw-allow.sh jack 10.20.30.40`
 3. `fw-allow.sh` Add (for a few seconds only) the firewall rules to allow `10.20.30.40` further connections based on `/user/jack` file
 
 
